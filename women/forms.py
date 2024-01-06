@@ -24,6 +24,8 @@ class AddPostForm(forms.ModelForm):
          return title
 
 
+
+
 class RegisterUserForm(UserCreationForm):
    username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-imput'}))
    email = forms.EmailField(label='Email', widget=forms.EmailInput(attrs={'class': 'form-imput'}))
